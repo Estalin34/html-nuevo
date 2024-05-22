@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHEVROLET</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>CHEVROLET</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="container-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="icon-cart"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+        />
+      </svg>
+      <div class="count-products">
+        <span id="contador-productos">0</span>
+      </div>
+
+      <div class="container-cart-products hidden-cart">
+        <div class="cart-product">
+          <div class="info-cart-product">
+            <span class="cantidad-producto-carrito">1</span>
+            <p class="titulo-producto-carrito">Zapatos Nike</p>
+            <span class="precio-producto-carrito">$80</span>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-close"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <div class="cart-total">
+          <h3>Total:</h3>
+          <span class="total-pagar">$200</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-items">
+    <div class="item">
+      <figure>
+        <img src="IMAGENES/2021-tahoe-exterior-01.jpg.webp" alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>TANOE</h2>
+        <p class="price">$140.000</p>
+        <button class="add-to-cart" data-name="TANOE" data-price="140000">Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img
+          src="IMAGENES/chevroletsilveradotrailboss202101.jpg"
+          alt="producto"
+        />
+      </figure>
+      <div class="info-product">
+        <h2>SILVERADO 1500</h2>
+        <p class="price">$92.000</p>
+        <button class="add-to-cart" data-name="SILVERADO 1500" data-price="92000">Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img
+          src="IMAGENES/Chevrolet Onix 2022 Ecuador Fayals rs.jpeg"
+          alt="producto"
+        />
+      </figure>
+      <div class="info-product">
+        <h2>Reloj</h2>
+        <p class="price">$20.000</p>
+        <button class="add-to-cart" data-name="Reloj" data-price="20000">Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img
+          src="IMAGENES/Chevrolet-Trailblazer-Premier_0046.jpg"
+          alt="producto"
+        />
+      </figure>
+      <div class="info-product">
+        <h2>TRAILBLAZER</h2>
+        <p class="price">$53.000</p>
+        <button class="add-to-cart" data-name="TRAILBLAZER" data-price="53000">Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="IMAGENES/COLORADO_HC_0054-1.jpg" alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>COLARADO</h2>
+        <p class="price">$49.000</p>
+        <button class="add-to-cart" data-name="COLARADO" data-price="49000">Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+  <h1>Formulario de Compra</h1>
+
+  <form id="formulario-compra">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <div>
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required />
+    </div>
+    <div>
+      <label for="tarjeta">Número de Tarjeta:</label>
+      <input type="text" id="tarjeta" name="tarjeta" required />
+    </div>
+    <button type="submit">Comprar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
